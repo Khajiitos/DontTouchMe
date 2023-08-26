@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "donttouchme",
+  "version": "${version}",
+  "name": "Don't Touch Me!",
+  "description": "Client-sided mod which prevents being pushed by other entities.",
+  "authors": ["Khajiitos"],
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "client",
+  "contact": {
+    "homepage": "https://github.com/Khajiitos/DontTouchMe",
+    "sources": "https://github.com/Khajiitos/DontTouchMe",
+    "issues": "https://github.com/Khajiitos/DontTouchMe/issues"
+  },
+  "entrypoints": {
+    "client": [
+      "me.khajiitos.donttouchme.fabric.DontTouchMeFabric"
+    ],
+    "modmenu": [
+      "me.khajiitos.donttouchme.fabric.ModMenuApiImpl"
+    ]
+  },
+  "mixins": [
+    "donttouchme.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "*",
+    "minecraft": "${minecraft_version_range}",
+    "java": ">=17"
+  }
+}

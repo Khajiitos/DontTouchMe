@@ -1,0 +1,6 @@
+{
+  "donttouchme.name": "Don't Touch Me!",
+  "donttouchme.category.general": "General",
+  "donttouchme.config.players_only": "Players only",
+  "donttouchme.config.players_only.description": "If enabled, you will only be immune to players."
+}
