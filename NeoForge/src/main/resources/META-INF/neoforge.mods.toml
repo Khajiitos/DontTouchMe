@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "${neo_loader_version_range}"
+license = "MIT"
+issueTrackerURL = "https://github.com/Khajiitos/DontTouchMe/issues"
+
+[[mods]]
+modId = "donttouchme"
+version = "${version}"
+logoFile="icon.png"
+displayName = "Don't Touch Me!"
+authors = "Khajiitos"
+displayURL="https://github.com/Khajiitos/DontTouchMe"
+description = '''Client-sided mod which prevents being pushed by other entities.'''
+displayTest = "IGNORE_ALL_VERSION"
+
+[[mixins]]
+config="donttouchme.mixins.json"
+
+[[dependencies.donttouchme]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.donttouchme]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
